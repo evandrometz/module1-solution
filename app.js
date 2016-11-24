@@ -51,6 +51,8 @@ function LunchCheckController ($scope) {
 
 
   $scope.count = function () {
+
+    $scope.foods = $scope.foods.trim();
       var splitedFoods = $scope.foods.split(',');
 
       for (var i = 0; i < splitedFoods.length; i++)
