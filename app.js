@@ -38,13 +38,13 @@
 (function () {
 'use strict';
 
-angular.module('LunchChecker', [])
+angular.module('LunchCheck', [])
 
-.controller('LunchCheckerController', LunchCheckerController);
+.controller('LunchCheckController', LunchCheckController);
 
 
-LunchCheckerController.$injector = ['$scope']
-function LunchCheckerController ($scope) {
+LunchCheckController.$injector = ['$scope']
+function LunchCheckController ($scope) {
   $scope.foods = "";
   $scope.totalValue = 0;
   $scope.state = "";
